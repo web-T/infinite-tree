@@ -80,7 +80,9 @@ class InfiniteTree extends events.EventEmitter {
         noDataClass: 'infinite-tree-no-data',
         noDataText: 'No data',
         nodeIdAttr: 'data-id',
-        togglerClass: 'infinite-tree-toggler'
+        togglerClass: 'infinite-tree-toggler',
+        clusterRowsInBlock: 50,
+        clusterBlocksInCluster: 4
     };
 
     state = {
@@ -376,7 +378,9 @@ class InfiniteTree extends events.EventEmitter {
                 scrollElement: this.scrollElement,
                 contentElement: this.contentElement,
                 emptyText: this.options.noDataText,
-                emptyClass: this.options.noDataClass
+                emptyClass: this.options.noDataClass,
+                rowsInBlock: this.options.clusterRowsInBlock,
+                blocksInCluster: this.options.clusterBlocksInCluster
             });
 
             this.clusterize.on('clusterWillChange', () => {

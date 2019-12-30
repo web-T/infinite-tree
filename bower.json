@@ -1,10 +1,11 @@
 {
-  "name": "infinite-tree",
+  "name": "infinite-tree-extended",
   "description": "A browser-ready tree library that can efficiently display a large amount of data using infinite scrolling.",
   "authors": [
-    "Cheton Wu <cheton_wu@trend.com.tw>"
+    "Cheton Wu <cheton_wu@trend.com.tw>",
+    "Tretyak Sergey <chief@web-t.com.ua>"
   ],
-  "homepage": "https://github.com/cheton/infinite-tree",
+  "homepage": "https://github.com/web-T/infinite-tree",
   "snapshots": [],
   "keywords": [
     "flat",
